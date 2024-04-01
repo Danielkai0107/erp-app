@@ -29,8 +29,8 @@ const AddTable = () => {
   };
 
   return (
-    <section className="mt-2">
-      <table className="table">
+    <section className="mt-2 overflow-scroll">
+      <table className="table table-bordered table-striped">
         <thead>
           <tr>
             <th scope="col"></th>
@@ -39,8 +39,7 @@ const AddTable = () => {
             <th scope="col">商品名稱</th>
             <th scope="col">數量</th>
             <th scope="col">單價</th>
-            <th scope="col">稅前價格</th>
-            <th scope="col">營業稅</th>
+            <th scope="col">金額</th>
             <th scope="col"></th>
           </tr>
         </thead>
@@ -49,13 +48,13 @@ const AddTable = () => {
             <tr key={index}>
               <th scope="row">{index + 1}</th>
               <td className="col-2">
-                <SelectInput title={null} list={['營業稅', '未稅']} />
+                <SelectInput title={null} list={['T00001', 'T00002', 'T00003']} />
               </td>
               <td className="col-2">
-                <SelectInput title={null} list={['營業稅', '未稅']} />
+                <SelectInput title={null} list={['ST202433343', 'ST202433388', 'ST202433456']} />
               </td>
               <td className="col-2">
-                <SelectInput title={null} list={['營業稅', '未稅']} />
+                <SelectInput title={null} list={['大金除濕機', '日立除濕機', '國際牌除濕機']} />
               </td>
               <td className="col-2">
                 <input
@@ -73,19 +72,11 @@ const AddTable = () => {
                   onChange={(e) => handleInputChange(index, 'unitPrice', e.target.value)}
                 />
               </td>
-              <td className="col-1">
+              <td className="col-2">
                 <input
                   className="form-control"
                   type="number"
                   value={row.preTaxPrice}
-                  readOnly
-                />
-              </td>
-              <td className="col-1">
-                <input
-                  className="form-control"
-                  type="number"
-                  value={row.salesTax}
                   readOnly
                 />
               </td>
@@ -103,24 +94,16 @@ const AddTable = () => {
       <button className="btn btn-outline-secondary" onClick={addRow}>
         新增一行
       </button>
-      <table className="table">
+      <table className="table table-bordered table-striped mt-3">
         <thead>
           <tr>
             <th scope="col"></th>
             <th scope="col">合併金額</th>
-            <th scope="col">合併營業稅</th>
           </tr>
         </thead>
         <tbody>
           <tr >
             <th scope="row"></th>
-            <td className="col-2">
-              <input
-                className="form-control"
-                type="number"
-                readOnly
-              />
-            </td>
             <td className="col-2">
               <input
                 className="form-control"

@@ -32,14 +32,33 @@ const Navbar = () => {
           </li> */}
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              採購系統
+              採購單
             </a>
             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
               <li>
-                <Link to={'/'} className="dropdown-item" >採購單</Link>
+                <Link to={'/BuyAddPage'} className="dropdown-item" >採購單</Link>
               </li>
               <li>
-                <Link to={'/Restock'} className="dropdown-item" >進貨單</Link>
+                <Link to={'/BuySearchPage'} className="dropdown-item" >查詢採購單</Link>
+              </li>
+              <li>
+                <Link to={'/BuyDetailPage'} className="dropdown-item" >採購單明細</Link>
+              </li>
+            </ul>
+          </li>
+          <li className="nav-item dropdown">
+            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              進貨單
+            </a>
+            <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <Link to={'/RestockAddPage'} className="dropdown-item" >進貨單</Link>
+              </li>
+              <li>
+                <Link to={'/RestockSearchPage'} className="dropdown-item" >查詢進貨單</Link>
+              </li>
+              <li>
+                <Link to={'/RestockDetailPage'} className="dropdown-item" >進貨單明細</Link>
               </li>
             </ul>
           </li>
