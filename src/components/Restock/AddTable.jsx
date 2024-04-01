@@ -106,7 +106,7 @@ const AddTable = () => {
         <thead>
           <tr>
             <th scope="col"></th>
-            <th scope="col">合併金額</th>
+            <th scope="col">合計金額</th>
           </tr>
         </thead>
         <tbody>

@@ -92,13 +92,13 @@ const AddTable = () => {
         </tbody>
       </table>
       <button className="btn btn-outline-secondary" onClick={addRow}>
-        新增一行
+        新增商品
       </button>
       <table className="table table-bordered table-striped mt-3">
         <thead>
           <tr>
             <th scope="col"></th>
-            <th scope="col">合併金額</th>
+            <th scope="col">合計金額</th>
           </tr>
         </thead>
         <tbody>

@@ -11,7 +11,7 @@ const RestockAddPage = () => {
         <AddForm />
         <AddTable />
         <button className="btn btn-primary mt-4">
-          儲存送出
+          採購轉進貨
         </button>
       </section>
     </article>
