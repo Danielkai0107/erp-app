@@ -10,19 +10,19 @@ const SearchForm = () => {
           <DateInput title={'日期'} />
         </div>
         <div className="col-md-2 mb-3">
-          <SelectInput title={'單號'} list={['文華酒店', '華奇有限公司', '大日電機']} />
+          <SelectInput title={'單號'} list={['選項一', '選項二', '選項三']} />
         </div>
         <div className="col-md-1 mb-3">
-          <SelectInput title={'承辦人'} list={['文華酒店', '華奇有限公司', '大日電機']} />
+          <SelectInput title={'承辦人'} list={['選項一', '選項二', '選項三']} />
         </div>
         <div className="col-md-2 mb-3">
-          <SelectInput title={'廠商名稱'} list={['文華酒店', '華奇有限公司', '大日電機']} />
+          <SelectInput title={'廠商名稱'} list={['選項一', '選項二', '選項三']} />
         </div>
         <div className="col-md-2 mb-3">
-          <SelectInput title={'商品名稱'} list={['233454', '0040454', '549523']} />
+          <SelectInput title={'商品名稱'} list={['選項一', '選項二', '選項三']} />
         </div>
         <div className="col-md-1 mb-3">
-          <SelectInput title={'狀態'} list={['在途中', '已送達', '未出貨', '已驗收待入褲']} />
+          <SelectInput title={'狀態'} list={['選項一', '選項二', '選項三']} />
         </div>
         <div className="col-md-2 mb-3">
           <DateInput title={'交付日期'} />

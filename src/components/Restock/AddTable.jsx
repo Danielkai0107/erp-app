@@ -48,13 +48,13 @@ const AddTable = () => {
             <tr key={index}>
               <th scope="row">{index + 1}</th>
               <td className="col-2">
-                <SelectInput title={null} list={['T00001', 'T00002', 'T00003']} />
+                <SelectInput title={null} list={['選項一', '選項二', '選項三']} />
               </td>
               <td className="col-2">
-                <SelectInput title={null} list={['ST202433343', 'ST202433388', 'ST202433456']} />
+                <SelectInput title={null} list={['選項一', '選項二', '選項三']} />
               </td>
               <td className="col-2">
-                <SelectInput title={null} list={['大金除濕機', '日立除濕機', '國際牌除濕機']} />
+                <SelectInput title={null} list={['選項一', '選項二', '選項三']} />
               </td>
               <td className="col-2">
                 <input
@@ -93,7 +93,7 @@ const AddTable = () => {
       </table>
       <div className='row'>
         <div className='col-2'>
-          <SelectInput sub={'選擇採購單...'} list={['第一單', '第二單']} />
+          <SelectInput sub={'選擇採購單...'} list={['選項一', '選項二', '選項三']} />
         </div>
         <div className="col-3">
           <button className="btn btn-outline-secondary me-3" onClick={addRow}>

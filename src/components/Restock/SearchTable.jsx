@@ -34,25 +34,25 @@ const SearchTable = () => {
             <tr key={index}>
               <th scope="row">{index + 1}</th>
               <td className="col-2">
-                {editStates[index] ? <SelectInput list={[]} /> : ''}
+                {editStates[index] ? <SelectInput list={['選項一', '選項二', '選項三']} /> : ''}
               </td>
               <td className="col-1">
-                {editStates[index] ? <SelectInput list={[]} /> : ''}
+                {editStates[index] ? <SelectInput list={['選項一', '選項二', '選項三']} /> : ''}
               </td>
               <td className="col-2">
-                {editStates[index] ? <SelectInput list={[]} /> : ''}
+                {editStates[index] ? <SelectInput list={['選項一', '選項二', '選項三']} /> : ''}
               </td>
               <td className="col-2">
-                {editStates[index] ? <SelectInput list={[]} /> : ''}
+                {editStates[index] ? <SelectInput list={['選項一', '選項二', '選項三']} /> : ''}
               </td>
               <td className="col-1">
-                {editStates[index] ? <SelectInput list={[]} /> : ''}
+                {editStates[index] ? <SelectInput list={['選項一', '選項二', '選項三']} /> : ''}
               </td>
               <td className="col-1">
-                {editStates[index] ? <SelectInput list={[]} /> : ''}
+                {editStates[index] ? <SelectInput list={['選項一', '選項二', '選項三']} /> : ''}
               </td>
               <td className="col-1">
-                {editStates[index] ? <SelectInput list={[]} /> : ''}
+                {editStates[index] ? <SelectInput list={['選項一', '選項二', '選項三']} /> : ''}
               </td>
               <td className="col-1">
                 {editStates[index] ? (
