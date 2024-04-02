@@ -8,12 +8,13 @@ const DetailTable = () => {
         <thead>
           <tr>
             <th scope="col"></th>
-            <th scope="col">日期-單號</th>
-            <th scope="col">品項名稱</th>
+            <th scope="col">日期</th>
+            <th scope="col">採購單單號</th>
+            <th scope="col">商品料號</th>
+            <th scope="col">商品名稱</th>
             <th scope="col">數量</th>
             <th scope="col">單價</th>
-            <th scope="col">合計金額</th>
-            <th scope="col">廠商名稱</th>
+            <th scope="col">客戶/供應商</th>
             <th scope="col">備註</th>
           </tr>
         </thead>
@@ -21,15 +22,17 @@ const DetailTable = () => {
           {list.map((item, index) =>
             <tr key={index}>
               <th scope="row">{index + 1}</th>
+              <td className="col-1">
+              </td>
+              <td className="col-2">
+              </td>
               <td className="col-2">
               </td>
               <td className="col-2">
               </td>
               <td className="col-1">
               </td>
-              <td className="col-2">
-              </td>
-              <td className="col-2">
+              <td className="col-1">
               </td>
               <td className="col-2">
               </td>

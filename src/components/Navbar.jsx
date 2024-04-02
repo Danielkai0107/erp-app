@@ -36,7 +36,7 @@ const Navbar = () => {
             </a>
             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
               <li>
-                <Link to={'/BuyAddPage'} className="dropdown-item" >採購單</Link>
+                <Link to={'/BuyAddPage'} className="dropdown-item" >新增採購單</Link>
               </li>
               <li>
                 <Link to={'/BuySearchPage'} className="dropdown-item" >查詢採購單</Link>
@@ -52,7 +52,7 @@ const Navbar = () => {
             </a>
             <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
               <li>
-                <Link to={'/RestockAddPage'} className="dropdown-item" >進貨單</Link>
+                <Link to={'/RestockAddPage'} className="dropdown-item" >新增進貨單</Link>
               </li>
               <li>
                 <Link to={'/RestockSearchPage'} className="dropdown-item" >查詢進貨單</Link>

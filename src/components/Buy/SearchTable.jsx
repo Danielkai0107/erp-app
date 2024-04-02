@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import SelectInput from '../Input/SelectInput';
 
 const SearchTable = () => {
   const list = ['', '', '', '', ''];
@@ -18,13 +17,14 @@ const SearchTable = () => {
         <thead>
           <tr>
             <th scope="col"></th>
-            <th scope="col">日期-單號</th>
+            <th scope="col">日期</th>
+            <th scope="col">單號</th>
+            <th scope="col">客戶/供應商</th>
             <th scope="col">承辦人</th>
-            <th scope="col">廠商名稱</th>
-            <th scope="col">品項名稱</th>
-            <th scope="col">交付日期</th>
+            <th scope="col">商品名稱</th>
+            <th scope="col">實際到貨日期</th>
             <th scope="col">合計金額</th>
-            <th scope="col">狀態</th>
+            <th scope="col">備註</th>
             <th scope="col"></th>
             <th scope="col"></th>
           </tr>
@@ -33,26 +33,27 @@ const SearchTable = () => {
           {list.map((item, index) =>
             <tr key={index}>
               <th scope="row">{index + 1}</th>
-              <td className="col-2">
-                {editStates[index] ? <SelectInput list={['選項一', '選項二', '選項三']} /> : ''}
+              <td className="col-1">
+
               </td>
               <td className="col-1">
-                {editStates[index] ? <SelectInput list={['選項一', '選項二', '選項三']} /> : ''}
-              </td>
-              <td className="col-2">
-                {editStates[index] ? <SelectInput list={['選項一', '選項二', '選項三']} /> : ''}
+
               </td>
               <td className="col-2">
-                {editStates[index] ? <SelectInput list={['選項一', '選項二', '選項三']} /> : ''}
+
               </td>
               <td className="col-1">
-                {editStates[index] ? <SelectInput list={['選項一', '選項二', '選項三']} /> : ''}
+
               </td>
               <td className="col-1">
-                {editStates[index] ? <SelectInput list={['選項一', '選項二', '選項三']} /> : ''}
+
+              </td>
+              <td className="col-2">
+
               </td>
               <td className="col-1">
-                {editStates[index] ? <SelectInput list={['選項一', '選項二', '選項三']} /> : ''}
+              </td>
+              <td className="col-1">
               </td>
               <td className="col-1">
                 {editStates[index] ? (
