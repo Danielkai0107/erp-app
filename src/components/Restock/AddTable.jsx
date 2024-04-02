@@ -96,8 +96,11 @@ const AddTable = () => {
           <SelectInput sub={'選擇採購單...'} list={['第一單', '第二單']} />
         </div>
         <div className="col-3">
+          <button className="btn btn-outline-secondary me-3" onClick={addRow}>
+            匯入採購單
+          </button>
           <button className="btn btn-outline-secondary" onClick={addRow}>
-            新增採購單
+            新增商品
           </button>
         </div>
       </div>
